@@ -25,7 +25,7 @@ Flexbox Formatting
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    max-width: none;
+    
 }
 
 main {
@@ -53,9 +53,7 @@ article, nav, aside {
     background-color: #fff;
     margin: .5rem;
     padding: .5rem;
-    order:0;
-    flex: 1;
-    margin: .5rem 0;
+    
 }
 
 nav{
@@ -66,8 +64,17 @@ aside, nav{
     flex: 0 0 12rem;
 }
 
-@media screen{
-    max-width: 36rem;
-    flex-direction: column;
-    width: 100vw;
+@media screen and (max-width: 36rem){
+    main{
+        flex-direction: column;
+        width: 100vw;
+    }
+    #wrapper{
+        max-width: none;
+    }
+    nav, aside, article{
+        order:0;
+        flex: 1;
+        margin: .5rem 0;
+    }
 }
