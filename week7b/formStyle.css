@@ -1,0 +1,42 @@
+form{
+    margin: 0 auto; /*centers form*/
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #CCC; /*adds border around form*/
+    border-radius: 1em; /*rounds corners*/
+}
+
+form div + div {
+    margin-top: 1em; /*spaces out contents of form*/
+}
+
+label {
+    /*aligns left side of boxes and aligns right side of text*/
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+input, textarea {
+    font: 1em sans-serif;
+    width: 300px; /*pulls boxes to the right to fillout the space*/
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+    border-color: #000;     /* To give a little highlight on active elements */
+}
+
+textarea {
+    vertical-align: top; /* To properly align multiline text fields with their labels */
+    height: 5em; /* To give enough room to type some text */
+}
+
+.button {
+    padding-left: 90px; /* move button to align with boxes */
+}
+
+button {
+    margin-left: .5em; /* nudges button slightly to align better */
+  }
