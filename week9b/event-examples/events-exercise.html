@@ -33,15 +33,23 @@
 
 <div id="colorform">
 	<legend>Choose your favorite color!</legend>
-	<p><input type="radio" name="colorGroup" value="red" /> Red</p>
-	<p><input type="radio" name="colorGroup" value="green" /> Green</p>
-	<p><input type="radio" name="colorGroup" value="blue" /> Blue</p>
+	<p><input type="radio" name="colorGroup" value="red" onclick="changeColor(this.value)"/> Red</p>
+	<p><input type="radio" name="colorGroup" value="green" onclick="changeColor(this.value)"/> Green</p>
+	<p><input type="radio" name="colorGroup" value="blue" onclick="changeColor(this.value)"/> Blue</p>
 	<p><button id="colorButton" type="button">Submit</button></p>
 	<p id="info"></p>
 </div>
 
 <script>
 /* Write your code here! */
+	let mainColor;
+	document.querySelectorAll("#colorGroup");
+
+	function changeColor(color){
+		document.getElementById("info").innerHTML = "You have selected color value " && color;
+		
+	}
+//idk im sorry
 </script>
 </body>
 </html>
