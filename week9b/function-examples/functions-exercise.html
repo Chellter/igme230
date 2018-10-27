@@ -34,26 +34,30 @@
         let colors = ["green", "blue", "purple"]; // add some colors
         let foods = ["steak", "pancakes", "salmon", "chocolate"]; // add some foods
 
-        foodListItems(foods);
-        colorsListItems(colors);
-
-        function foodListItems(array){
-            for(let i= 0; i< array.length; i++ ){
+            /*for(let i= 0; i< colors.length; i++ ){
                 let newListItem = document.createElement("li");
-                newListItem.innerHTML = array[i];
-                let orderedList= document.querySelector("#foodsList");
-                orderedList.appendChild(newListItem);
-            }
-        }
-
-        function colorsListItems(array){
-            for(let i= 0; i< array.length; i++ ){
-                let newListItem = document.createElement("li");
-                newListItem.innerHTML = array[i];
+                newListItem.innerHTML = colors[i];
                 let orderedList= document.querySelector("#colorsList");
                 orderedList.appendChild(newListItem);
             }
+            for(let i= 0; i< foods.length; i++ ){
+                let newListItem = document.createElement("li");
+                newListItem.innerHTML = foods[i];
+                let orderedList= document.querySelector("#foodsList");
+                orderedList.appendChild(newListItem);
+            } */
+
+        function createList(listElement, array){
+            for(let i= 0; i< array.length; i++ ){
+                let newListItem = document.createElement("li");
+                newListItem.innerHTML = array[i];
+                let orderedList= document.querySelector(listElement);
+                orderedList.appendChild(newListItem);
+            }
         }
+
+        createList("#colorsList", colors);
+        createList("#foodsList", foods);
         
     </script>
     
