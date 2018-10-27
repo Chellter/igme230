@@ -33,6 +33,28 @@
         "use strict";
         let colors = ["green", "blue", "purple"]; // add some colors
         let foods = ["steak", "pancakes", "salmon", "chocolate"]; // add some foods
+
+        foodListItems(foods);
+        colorsListItems(colors);
+
+        function foodListItems(array){
+            for(let i= 0; i< array.length; i++ ){
+                let newListItem = document.createElement("li");
+                newListItem.innerHTML = array[i];
+                let orderedList= document.querySelector("#foodsList");
+                orderedList.appendChild(newListItem);
+            }
+        }
+
+        function colorsListItems(array){
+            for(let i= 0; i< array.length; i++ ){
+                let newListItem = document.createElement("li");
+                newListItem.innerHTML = array[i];
+                let orderedList= document.querySelector("#colorsList");
+                orderedList.appendChild(newListItem);
+            }
+        }
+        
     </script>
     
 </body>
