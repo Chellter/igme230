@@ -16,7 +16,7 @@
 
 <body>
 <main>
-    <h1>Your Name's Web Storage Exercise</h1>
+    <h1>Michele's Web Storage Exercise</h1>
     <div>
         What is your name? &rightarrow; <input type="text" id="nameField">
     </div>
@@ -60,14 +60,13 @@
     // if we find a previously set color value, display it
     if (storedColor) {
         colorSelect.querySelector(`option[value='${storedColor}']`).selected = true;
+        document.body.style.backgroundColor = storedColor;
     }
 
     /* This part of the script is triggered by user actions  */
     // when the user changes their name or color, update localStorage
     nameField.onchange = e => { localStorage.setItem(nameKey, e.target.value); };
-    colorSelect.onchange = e => { localStorage.setItem(colorKey, e.target.value); };
-
-
+    colorSelect.onchange = e => { localStorage.setItem(colorKey, e.target.value); document.body.style.backgroundColor = document.getElementById("colorSelect").value; };
 </script>
 </body>
 
