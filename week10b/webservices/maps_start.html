@@ -24,6 +24,14 @@
           mapTypeId: google.maps.MapTypeId.TERRAIN,
           disableDefaultUI: true
         }
+        
+        var myMap = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+
+        var myMarker = new google.maps.Marker({
+            position: latlng,
+            icon: "baseline-directions_walk-24px.svg",
+            map: myMap
+        });
 
         // create a new map with the specified options (uses deprecated getElementByID; could use querySelector instead)
         var contentString = '<div id="content"><h2 id="firstHeading" class="firstHeading">I Did It!</h2><p>This is my very own custom info window.</p></div>';
@@ -33,14 +41,6 @@
 
         myMarker.addListener('click', function() {
              myInfowindow.open(myMap, myMarker);
-        });
-
-        var myMap = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-
-        var myMarker = new google.maps.Marker({
-            position: latlng,
-            icon: "baseline-directions_walk-24px.svg",
-            map: myMap
         });
       });
 
