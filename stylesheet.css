@@ -27,7 +27,7 @@ img{
     vertical-align: middle;
 }
 
-#title{
+h1,h2{
     font-family: 'Cabin', sans-serif;
 }
 
