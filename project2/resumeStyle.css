@@ -95,3 +95,7 @@ p{
     color: #0c7289;
     text-decoration: underline solid #0c7289;
 }
+
+@page {
+    size: A4;
+  }
