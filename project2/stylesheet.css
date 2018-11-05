@@ -135,4 +135,8 @@ p{
         flex: 1;
         margin: .5rem 0;
     }
+
+    h1{
+        padding-left: 2em;
+    }
 }
