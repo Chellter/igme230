@@ -1,0 +1,7 @@
+Documentation Page
+
+Typefaces Montserrat and Open Sans from Google Fonts.
+
+Grid code for projects from week 6 b exercise.
+
+Designing the website for mobile was difficult because I had to move everything around.
