@@ -117,3 +117,23 @@ p{
     transform: scale(1.2);
 }
 
+@media screen and (max-width: 36rem){
+    header{
+        float: none;
+        position: static;
+        background-color: red;
+    }
+
+    main{
+        flex-direction: column;
+        width: 100vw;
+    }
+    #wrapper{
+        max-width: none;
+    }
+    nav, aside, article{
+        order:0;
+        flex: 1;
+        margin: .5rem 0;
+    }
+}
