@@ -15,7 +15,6 @@ header{
     height: 12em;
     position: fixed;
     width: 100%;
-    
 }
 
 /* image stays to left*/
@@ -121,7 +120,7 @@ p{
     header{
         float: none;
         position: static;
-        background-color: red;
+        
     }
 
     main{
