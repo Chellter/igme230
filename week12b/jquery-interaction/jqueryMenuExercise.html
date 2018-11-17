@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lit</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        p{
+            width: 70%; 
+        }
+        main{
+            margin-top: 3em;
+            margin-left: 1em;
+            z-index: 1;
+        }
+        nav{
+            padding-right: 1em;
+            display: flex;
+            flex-direction: column; /* main axis vertical; places menu below togglebar */
+            align-items: flex-end;
+        }
+        #menu{
+            font-size: 1.5em;
+            text-align: right;
+        }
+        #navtoggle{
+            z-index: 3;
+        }
+        ul{
+            z-index: 2;
+            position: absolute;
+        }
+        #close{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav> 
+        <!--<p id= menu>Menu </p> -->
+        <div id="navtoggle"><span id="open">Menu</span> <span id="close">Close</span></div>
+        <ul id=menuitems>
+            <li>Option 1</li>
+            <li>Option 2</li>
+            <li>Option 3</li>
+        </ul>
+    </nav>
+
+    <main>
+    <p>
+        I love cheese, especially when the cheese comes out everybody's happy boursin. Emmental camembert de normandie who moved my cheese feta cheese and biscuits the big cheese rubber cheese cheese strings. Boursin port-salut who moved my cheese cottage cheese mascarpone bocconcini stilton blue castello. Mascarpone rubber cheese feta cheese slices bavarian bergkase rubber cheese croque monsieur cheese and biscuits. Bocconcini.
+    </P>
+    <p> 
+        Jarlsberg cheese and biscuits cheesy feet. Cheddar cheeseburger st. agur blue cheese swiss say cheese cottage cheese babybel caerphilly. Red leicester paneer gouda ricotta fondue cheeseburger boursin everyone loves. Jarlsberg gouda when the cheese comes out everybody's happy edam cheese and wine.
+    </p>
+    <p> 
+        Mozzarella danish fontina who moved my cheese. Stilton cottage cheese pecorino babybel cheese on toast feta who moved my cheese st. agur blue cheese. Bocconcini cheese and wine chalk and cheese melted cheese cow queso fromage airedale. Bavarian bergkase.
+    </p>
+    </main>
+</body>
+
+<script>
+
+    $("#navtoggle").click(function () {
+        $("#menuitems").slideToggle("slow");
+    });
+
+    $("#close").click(function () {
+        /*$("#menuitems").animate({ left: '+100' }, "slow"); */
+        $("#close").toggle();
+        $("#open").toggle();
+    });
+
+    $("#open").click(function () {
+        /* $("#menuitems").animate({ left: '0px' }, "slow"); */
+        $("#close").toggle();
+        $("#open").toggle();
+    });
+
+</script>
+</html>
