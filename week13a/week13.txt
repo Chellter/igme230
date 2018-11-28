@@ -1,0 +1,9 @@
+Week 13a
+
+My landing page:
+There were no errors. My single feature was an image of me that I had labelled with the alternative text "A picture of me". I now know that it would be better if I labelled it "me".
+
+RIT Housing Operations portal:
+There are 23 errors. 9 images, 4 linked images, and an image button are missing alternative text.
+
+9 forms are missing labels.
