@@ -80,7 +80,7 @@
 
     </div>
     <script>
-        let poem = "poem.txt";
+        let poem = "mypoem.txt";
         let verse = ("verse1")  // sets default verse element
 //*** ON STEP 5***
         //let verseString = (poem + " #" + verse); 
@@ -92,7 +92,8 @@
 
         $("#verse-choose").change(function() {
             verse = $(this).val();
-            $("#selectedverse").load(verse); 
+            verseString = `${poem} #${verse}`;
+            $("#selectedverse").load(verseString); 
         });
 
         

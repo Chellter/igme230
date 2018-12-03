@@ -1,0 +1,23 @@
+<p id="verse1">I wrote these haikus.<br>
+Does this warrant bonus points?<br>
+Please, I am begging.</p>
+
+<p id="verse2">Super Smash Brothers<br>
+is coming out Thursday night.<br>
+No sleep, only play.</p>
+
+<p id="verse3">Cats are nice and cute.<br>
+Cats are funny until they<br>
+tear up your nice bed.</p>
+
+<p id="verse4">I am tired, tired, tired.<br>
+I need more sleep because I am<br>
+tired, tired, tired, tired, tired.</p>
+
+<p id="verse5">I have hot coffee.<br>
+I forgot about my drink.<br>
+I have cold coffee.</p>
+
+<p id="verse6">Ow, I stubbed my toe.<br>
+I have a headache now too.<br>
+Ouch, everything hurts.</p>
