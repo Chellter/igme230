@@ -83,12 +83,12 @@
         let poem = "poem.txt";
         let verse = ("verse1")  // sets default verse element
 //*** ON STEP 5***
-        let verseString = (poem + " #" + verse); 
+        //let verseString = (poem + " #" + verse); 
         // or use ES6 templating: 
-        // let verseString = `${poem} #${verse}`;
+        let verseString = `${poem} #${verse}`;
 
-        $("#verse-choose").val(verseString); // changes menu option to default
-        $("#selectedverse").load(verse);   // retrieves only default element
+        $("#verse-choose").val(verse); // changes menu option to default
+        $("#selectedverse").load(verseString);   // retrieves only default element
 
         $("#verse-choose").change(function() {
             verse = $(this).val();
