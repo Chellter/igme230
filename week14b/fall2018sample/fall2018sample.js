@@ -14,14 +14,13 @@ $("#open").click(function () {
     $("#open").toggle();
 });
 
-/*
-<h2>&lt;aside&gt; element</h2>
+/*** the HTML for the select menu ***/
+/*<h2>&lt;aside&gt; element</h2>
 <label for="content-menu">Select a file to load:</label>
 <select name="content-menu" id="choose-content">
     <option value="content1.txt">Your Name</option>
     <option value="content2.txt">Course Info</option>
-</select>
-*/
+</select>*/
 
 let cont = ("content1.txt")  // sets default verse element
     $("#choose-content").val(cont); // changes menu option to default
