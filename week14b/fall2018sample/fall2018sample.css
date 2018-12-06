@@ -39,13 +39,72 @@ Your Formatting
 ***************/
 #wrapper{
     display: grid;
-    width: 90vh;
+    width: 90vw;
     max-width: 1200px;
     min-height:  100vh;
+
+    grid-template-rows: 4rem 1fr 3rem; /* adds vertical space to each cell */
+    grid-template-columns: 1fr 2fr 200px; 
+     
+    grid-template-areas: "header header header"
+    "aside article nav"
+    "footer footer footer";
+}
+
+header{
+    grid-area: header; 
+}
+
+nav{
+    grid-area: nav;
+}
+
+article{
+    grid-area: article;
+}
+
+aside{
+    grid-area: aside;
+}
+
+footer{
+    grid-area: footer;
+    
+}
+
+header, footer{
+    display: flex;
+    justify-content: center; /* centers text horizontally */
+    align-items:center; /* centers text vertically */
+}
+
+.menuitem{
+    background-color: white;
+    margin: 0;
+    border-top: solid 1px;
+    border-color: #b5e7a0;
+}
+
+.submenu{
+    margin: 0;
+    padding: 0;
+    display: none;
+    list-style-type: none;
+}
+
+li{
+    padding-left: .25rem;
+    background-color: lightgray;
 }
 
 @media screen and (max-width: 36rem){
-    #warpper{
-        width: 100vh;
+    #wrapper{
+        width: 100vw;
+        grid-template-rows: auto;
+        grid-template-columns: auto; 
+
+        grid-template-areas: "header" "nav" "article" "aside" "footer";
     }
+    
+    
 }
