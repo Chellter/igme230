@@ -1,0 +1,97 @@
+*{
+    margin:0;
+    color: #121729;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    background-color: #0c7289;
+    /* header stays at top of page */
+    float: top;
+    height: 12em;
+    position: fixed;
+    width: 100%;
+    
+}
+
+/* image stays to left*/
+img{
+    max-height: 100%;
+    float: left;
+    margin:0;
+    vertical-align: middle;
+}
+
+h1,h2,h3{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{ 
+    font-size: 4em;
+    padding-left: 1em;
+}
+
+h2{
+    font-Size: 2em;
+    padding-left: 9.5em;
+}
+
+aside{
+    background-color: #d3cced;
+    float: left;
+    padding: 1em;
+    margin-top: 12em;
+    width: 10em;
+     
+}
+
+h3{
+    font-size: 1.5em;
+    padding-bottom: .5em;
+}
+
+h4{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+ul{
+    /*padding-bottom: 1em;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 1em; */
+    list-style-type: square; 
+}
+
+a{
+    text-decoration: underline;
+    /*text-decoration-color: #d3cced;*/
+}
+
+a:hover{
+    text-decoration: underline solid #d3cced;
+    color: #d3cced;
+}
+
+main{
+    padding-top: 13em;
+    margin-left: 16em;  
+    /*margin-right: 16em;*/
+    max-width: 52em;
+}
+
+p{
+    padding-bottom: 1em;
+}
+
+#asideImg{
+    margin-bottom: 1em;
+}
+
+#bodyLink:hover{
+    color: #0c7289;
+    text-decoration: underline solid #0c7289;
+}
+
+@page {
+    size: A4;
+  }
