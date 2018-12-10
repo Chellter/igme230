@@ -14,3 +14,14 @@ $("#open").click(function () {
     $("#open").toggle();
 });
 
+$("#keypsafe").click(function () {
+    window.location.href = "keypSafeProject.html";
+});
+
+$("#payday").click(function () {
+    window.location.href = "payDayProject.html";
+});
+
+$("#payday").click(function () {
+    window.location.href = "untitledProject.html";
+});
