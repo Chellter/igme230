@@ -7,6 +7,7 @@
     <title>Michele Fensken's Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Barlow|Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -17,10 +18,22 @@
     <header>
         <div id=title>
             <h1>Michele Fensken</h1>
-            <h2 id= contact>mfensken@gmail.com - (315)460-5501 - <a href="https://www.linkedin.com/in/michele-fensken-462614154/">LinkedIn</a></h2>
-            <h2 id= contact><a href="aboutMe.html">About Me</a></h2>
+            <h2 class= contact>mfensken@gmail.com - (315)460-5501 - <a href="https://www.linkedin.com/in/michele-fensken-462614154/">LinkedIn</a></h2>
+            <h2 class= contact><a href="aboutMe.html">About Me</a></h2>
         </div>
     </header>
+
+    <nav>
+        <div class="menubox">
+            <h2 class="menuitem">Menu</h2>
+            <ul class="submenu">
+                <li><h4><a href="aboutMe.html">About Me</a></h4></li>
+                <li><h4>mfensken@gmail.com</h4></li>
+                <li><h4>(315)460-5501</h4></li>
+                <li><h4><a href="https://www.linkedin.com/in/michele-fensken-462614154/">LinkedIn</a></h4></li>
+            </ul>
+        </div>
+    </nav>
 
     <main>
         <div id= content>
@@ -43,6 +56,8 @@
         </div>
     </main>
 </div>
+
+<script src="portfolio.js"></script>
 
 </body>
 </html>
