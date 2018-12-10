@@ -26,6 +26,23 @@ html{
     "aside main";
 }
 
+aside{
+    grid-area: aside;
+    background-color: #d3cced;
+    padding: 1em;
+    display: grid;
+    align-items: center; 
+}
+
+.asideImg{
+    margin: auto;
+}
+
+.xtraImg{
+    padding-bottom: 1em;
+}
+/* End of CSS for About Me page */
+
 header{
     grid-area: header;
     background-color: #0c7289;
@@ -77,19 +94,6 @@ a:hover{
     color: #d3cced;
 }
 
-aside{
-    background-color: #d3cced;
-    /* float: left; */
-    padding: 1em;
-    margin-top: 12em;
-    width: 10em;  
-}
-
-
-.asideImg{
-    margin-bottom: 1em;
-}
-
 main{
     grid-area: main;
     padding-top: 10vh;
@@ -137,6 +141,11 @@ nav{
         grid-template-columns: auto; 
 
         grid-template-areas: "header" "nav" "main"; /* single column template */
+    }
+
+    /* for About Me page */
+    #specialWrapper{
+        grid-template-areas: "header" "main" "aside";
     }
 
     header{
