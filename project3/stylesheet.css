@@ -79,6 +79,7 @@ aside{
     width: 10em;  
 }
 
+
 .asideImg{
     margin-bottom: 1em;
 }
@@ -98,6 +99,7 @@ main{
 }   
 
 p{
+    font-size: 1em;
     padding-bottom: 1em;
 }
 
@@ -138,7 +140,7 @@ nav{
         align-items:center; /* centers text vertically */
     }
 
-    #headerImg{
+    .headerImg{
         display: none;
     }
     
@@ -147,7 +149,15 @@ nav{
     }
     
     h2, h4{
-        font-Size: .75em;
+        font-Size: 1.25em;
+    }
+
+    h3{
+        font-size: 1.5em;
+    }
+
+    p{
+        font-size: 1em;
     }
 
     .contact{
@@ -167,7 +177,7 @@ nav{
     }
     
     main{
-        width: 100vw;
+        width: 97vw;
         padding-bottom: 10vh;
     }
 
