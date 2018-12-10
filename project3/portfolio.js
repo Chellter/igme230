@@ -24,6 +24,6 @@ $("#payday").click(function () {
     window.location.href = "payDayProject.html";
 });
 
-$("#payday").click(function () {
+$("#untitled").click(function () {
     window.location.href = "untitledProject.html";
 });
