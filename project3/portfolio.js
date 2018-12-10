@@ -1,5 +1,6 @@
-/* Don't use <script> tags in a linked js file! */
+/* My JS */
 
+// for dropdown menu
 $(".menuitem").click(function () {
     $(this).next(".submenu").slideToggle("slow");
 });
@@ -14,6 +15,7 @@ $("#open").click(function () {
     $("#open").toggle();
 });
 
+//opens page when any part of project is clicked
 $("#keypsafe").click(function () {
     window.location.href = "keypSafeProject.html";
 });
