@@ -8,7 +8,7 @@ html{
     background-color: #e6e6ed;
 }
 
-#wrapper{
+.wrapper{
     display: grid;
     width: 100vw;
     min-height:  100vh;
@@ -28,7 +28,7 @@ header{
     padding-left: 1.5em;
 }
 
-#headerImg{
+.headerImg{
     grid-area: headerImg;
 }
 
@@ -79,7 +79,7 @@ aside{
     width: 10em;  
 }
 
-#asideImg{
+.asideImg{
     margin-bottom: 1em;
 }
 
@@ -92,7 +92,7 @@ main{
     margin-right: auto;
 }
 
-#content{
+.content{
     display: flex;
     justify-content: space-between;
 }   
@@ -101,7 +101,7 @@ p{
     padding-bottom: 1em;
 }
 
-#bodyLink:hover{
+.bodyLink:hover{
     color: #0c7289;
     text-decoration: underline solid #0c7289;
 }
@@ -123,7 +123,7 @@ nav{
 
 @media screen and (max-width: 820px){
 
-    #wrapper{
+    .wrapper{
         width: 100vw;
         grid-template-rows: auto;
         grid-template-columns: auto; 
@@ -171,7 +171,7 @@ nav{
         padding-bottom: 10vh;
     }
 
-    #content{
+    .content{
         display: grid;
         grid-template-rows: auto;
         grid-template-columns: auto; 
@@ -186,4 +186,5 @@ nav{
     .proj{
         border-top: 2em solid #e6e6ed;
     }
+
 }
