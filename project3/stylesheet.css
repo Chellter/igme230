@@ -145,7 +145,7 @@ nav{
 
     /* for About Me page */
     #specialWrapper{
-        grid-template-areas: "header" "main" "aside";
+        grid-template-areas: "header" "nav" "main" "aside";
     }
 
     header{
